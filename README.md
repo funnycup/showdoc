@@ -1,4 +1,23 @@
-﻿###ShowDoc是什么
+这个分支的showdoc针对nginx部署做了修改：
+
+- nginx的配置里：
+
+		location /showdoc/ {
+		    index  index.html index.htm index.php;
+		    if (!-e $request_filename) { 
+		        rewrite ^/showdoc/index.php(.*)$ /showdoc/index.php?s=$1 last; 
+		        rewrite ^/showdoc/(.*)$ /showdoc/index.php?s=$1 last; 
+		        break; 
+		    } 
+		}
+
+- 针对Thinkphp，入口文件index.php里添加：
+
+`define('_PHP_FILE_',$_SERVER['SCRIPT_NAME']);`
+
+---
+
+###ShowDoc是什么
 
 每当接手一个他人开发好的模块或者项目，看着那些没有写注释的代码，我们都无比抓狂。文档呢？！文档呢？！**Show me the doc  ！！**  
  
