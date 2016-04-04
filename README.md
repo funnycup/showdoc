@@ -13,7 +13,7 @@
 
 - 针对Thinkphp，入口文件index.php里添加：
 
-`define('_PHP_FILE_',$_SERVER['SCRIPT_NAME']);`
+	define('_PHP_FILE_',$_SERVER['SCRIPT_NAME']);
 
 ---
 
