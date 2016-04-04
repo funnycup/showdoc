@@ -19,7 +19,7 @@ if(version_compare(PHP_VERSION,'5.3.0','<'))  die('require PHP > 5.3.0 !');
 
 // 定义应用目录
 define('APP_PATH','./Application/');
-
+define('_PHP_FILE_',$_SERVER['SCRIPT_NAME']);//适应nginx
 // 引入ThinkPHP入口文件
 require './ThinkPHP/ThinkPHP.php';
 

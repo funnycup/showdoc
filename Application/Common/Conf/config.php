@@ -4,8 +4,8 @@ return array(
 	'DB_TYPE'   => 'mysql', // 数据库类型
 	'DB_HOST'   => 'localhost',
 	'DB_NAME'   => 'showdoc', 
-	'DB_USER'   => 'showdoc', 
-	'DB_PWD'    => 'showdoc123456',
+	'DB_USER'   => 'root', 
+	'DB_PWD'    => '123456',
 	'DB_PORT'   => 3306, // 端口
 	'DB_PREFIX' => '', // 数据库表前缀
 	'DB_CHARSET'=> 'utf8', // 字符集
@@ -15,5 +15,5 @@ return array(
 	'URL_ROUTE_RULES'=>array(
 	    ':id\d'               => 'Home/Item/Show?item_id=:1',
 	),
-	'URL_CASE_INSENSITIVE'=>true
+	'URL_CASE_INSENSITIVE'=>true,
 );

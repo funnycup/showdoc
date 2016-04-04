@@ -15,5 +15,5 @@ return array(
     'URL_ROUTE_RULES'=>array(
         ':id\d'               => 'Home/Item/Show?item_id=:1',
     ),
-    'URL_CASE_INSENSITIVE'=>true
+    'URL_CASE_INSENSITIVE'=>true,
 );
